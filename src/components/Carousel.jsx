@@ -1,7 +1,7 @@
 import { MDBCarousel, MDBCarouselItem } from "mdb-react-ui-kit";
-import bricsImg from "../assets/302047241_450081353808820_7246286999325033076_n.jpg";
-import hotelImg from "../assets/2023-11-27.jpg";
-import jebsImg from "../assets/shutterstock_1704977827.webp";
+import bricsImg from "../assets/factory.jpg";
+import hotelImg from "../assets/hotel1.jpg";
+import jebsImg from "../assets/jebs.webp";
 
 const Carousel = () => {
   return (

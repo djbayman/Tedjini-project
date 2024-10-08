@@ -1,6 +1,6 @@
 import briqueProductImg from "../assets/brique2-jpg.jpg";
-import hoterProductImg from "../assets/_MRG5084.jpg";
-import b13ProductImg from "../assets/مميزات_الجبس_الروماني.jpg";
+import hoterProductImg from "../assets/hotel.jpg";
+import b13ProductImg from "../assets//jebs1.jpg";
 
 const OurProducts = () => {
   return (

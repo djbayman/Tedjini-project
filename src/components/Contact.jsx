@@ -1,4 +1,8 @@
+import { useLocation } from "react-router-dom";
+
 const Contact = () => {
+  const location = useLocation();
+
   return (
     <footer
       id="إتصل-بنا"
@@ -51,21 +55,34 @@ const Contact = () => {
         </h3>
       </div>
       <div className="contact">
-        <form className="w-2/3">
+        <form
+          className="w-2/3"
+          action="https://formsubmit.co/djaballahayman20@gmail.com"
+          method="POST"
+        >
           <input
-            type="text"
+            type="email"
+            name="email"
             className="mb-2 rounded-md w-full h-10 focus:outline-none ps-2  text-lg text-black"
             placeholder="أدخل بريدك الإلكتروني"
           />
           <textarea
+            name="message"
             rows="2"
             cols="50"
             className="rounded-md  w-full focus:outline-none ps-2 pt-2  text-lg text-black"
             placeholder="أكتب لنا رسالة"
           />
-          <button className="px-3 py-2 text-black font-semibold w-24  bg-white rounded-lg hover:bg-cyan-500 hover:text-white transition-colors">
+          <button className="px-3 py-2  font-semibold w-24 bg-white  text-cyan-900  rounded-lg">
             إرسال
           </button>
+          <input
+            type="hidden"
+            name="_next"
+            value={`http://localhost:3000${location.pathname}`}
+          ></input>
+          <input type="hidden" name="_captcha" value="false"></input>
+          <input type="hidden" name="_subject" value="New Message"></input>
         </form>
       </div>
     </footer>
