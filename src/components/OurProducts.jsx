@@ -52,11 +52,11 @@ const OurProducts = () => {
       <h1 className="text-4xl mb-4 w-24 mx-auto font-semibold pb-1 border-b-4 border-cyan-600">
         منتجاتنا
       </h1>
-      <div className="flex  items-center justify-between gap-4 flex-wrap w-11/12 mx-auto">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-11/12 mx-auto">
         {arrayOfProducts.map((product) => (
           <div
-            className="box flex flex-col justify-between flex-wrap border-4 border-cyan-700 rounded-lg  hover:scale-105 transition-transform cursor-pointer"
-            style={{ width: "45%", height: "75vh" }}
+            className="box  border-4 h-[29rem] border-cyan-700 rounded-lg  hover:scale-105 transition-transform cursor-pointer"
+            // style={{ height: "65vh" }}
           >
             <Link to="/brique" className="text-black h-full">
               <img src={product.img} className="w-full h-1/2 " alt="" />

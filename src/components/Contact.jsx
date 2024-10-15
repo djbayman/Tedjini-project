@@ -6,10 +6,10 @@ const Contact = () => {
   return (
     <footer
       id="إتصل-بنا"
-      className="mt-4 bg-cyan-600 flex p-20 text-white"
+      className="mt-4 bg-cyan-600 flex flex-col md:flex-row gap-5 items-start p-20 text-white"
       style={{ direction: "rtl" }}
     >
-      <div className="info w-1/2">
+      <div className="info w-full md:w-1/2 ">
         <h2 className="font-semibold ">إتصل بنا</h2>
         <h3 className="text-lg flex items-center gap-2">
           <svg
@@ -51,12 +51,12 @@ const Contact = () => {
             <path d="M22.5 6.908V6.75a3 3 0 0 0-3-3h-15a3 3 0 0 0-3 3v.158l9.714 5.978a1.5 1.5 0 0 0 1.572 0L22.5 6.908Z" />
           </svg>
 
-          <span> الإيمايل: </span>
+          <span> البريد الإلكتروني: </span>
         </h3>
       </div>
       <div className="contact">
         <form
-          className="w-2/3"
+          className="md:w-2/3"
           action="https://formsubmit.co/djaballahayman20@gmail.com"
           method="POST"
         >
