@@ -6,19 +6,17 @@ const Navbar = () => {
   const [onHever, setOnHover] = useState(false);
 
   const dropDown = (
-    <div className="w-32 h-28 bg-cyan-700 absolute top-10 right-0 rounded-md border-t-2 border-white text-sm transition-transform">
+    <div className="w-32 h-28 bg-cyan-700 absolute top-10 right-0 z-10 rounded-md border-t-2 border-white text-sm transition-transform">
       <ul className="">
         <Link to="/brique" className="text-white">
           <li className="w-32 p-2 hover:bg-cyan-800 rounded-md">صناعة الآجر</li>
         </Link>
+        <Link to="/jebs" className="text-white">
+          <li className="w-32 p-2 hover:bg-cyan-800 rounded-md">صناعة الجبس</li>
+        </Link>
         <Link to="/hotel" className="text-white">
           <li className="w-32 p-2 hover:bg-cyan-800 rounded-md">
             خدمة الفندقة
-          </li>
-        </Link>
-        <Link to="/jebs" className="text-white">
-          <li className="w-32 p-2 hover:bg-cyan-800 rounded-md">
-            صناعة الإسمنت الأبيض
           </li>
         </Link>
       </ul>
@@ -27,16 +25,16 @@ const Navbar = () => {
 
   return (
     <div
-      className=" top-0 sticky z-10 "
-      style={{ direction: "rtl", height: "calc(100vh - 88vh)" }}
+      // className=" top-0 sticky z-10 "
+      style={{ direction: "rtl", minHeight: "calc(100vh - 90vh)" }}
     >
-      <nav className="w-full flex items-center justify-between bg-cyan-700		 px-4 py-8 text-white h-20  ">
-        <div className="flex items-center py-4 gap-3">
-          <img src={logo} className="w-20 h-20" alt="" />
+      <nav className="w-full flex md:flex-row  items-center justify-between bg-cyan-700		 px-4 text-white   ">
+        <div className="flex items-center py-1  gap-3">
+          <img src={logo} className="w-16 h-16" alt="" />
           <h1 className="logo font-bold text-xl ">مجمع تجاني</h1>
         </div>
-        <ul className="flex items-center font-semibold ">
-          <li className="ms-2 px-4 py-2 hover:bg-cyan-800 transition-colors rounded-md cursor-pointer">
+        <ul className="flex items-center font-semibold mb-0 p-0">
+          <li className="ms-2 sm:px2 md:px-4 py-2 hover:bg-cyan-800 transition-colors rounded-md cursor-pointer">
             <a href="/#" className="text-white">
               الرئيسية
             </a>

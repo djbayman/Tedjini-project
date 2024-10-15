@@ -4,6 +4,8 @@ import bulldozer from "../assets/bulldozer.webp";
 import fabricationMachine from "../assets/fabrication-machine-removebg-preview.jpg";
 import electKlin from "../assets/elec_klin.jpeg";
 import briqueStock from "../assets/brique-stock.jpg";
+import hotelTggt from "../assets/hotel1.jpg";
+import hotelSouf from "../assets/hotel-souf.jpg";
 import { useEffect } from "react";
 import { useState } from "react";
 
@@ -61,6 +63,74 @@ const Brique = () => {
           </p>
         </div>
       </div>
+      <section className=" my-10" style={{ direction: "rtl" }}>
+        <h1 className="text-4xl  w-28 mx-auto font-semibold pb-1 border-b-4 border-cyan-600">
+          فروعنا :
+        </h1>
+        <div className="flex items-center gap-20 justify-center flex-wrap my-6">
+          <div className="w-2/5 h-96 bg-slate-200 rounded-lg">
+            <img
+              src={hotelTggt}
+              className=" h-2/4 w-full rounded-t-lg"
+              alt=""
+            />
+            <div className="ps-4 pb-2">
+              <h3 className="text-xl font-semibold">
+                شركة إنتاج مواد البناء SARL SPMC
+              </h3>
+              <p className="font-semibold text-gray-600 ">
+                تأسست في عام 1990 وتقع في ولاية تقرت، هي شركة رائدة في صناعة
+                الآجر الأحمر. مع فريق عمل مكون من حوالي 500 عامل مؤهل، تلتزم
+                الشركة بتقديم منتجات عالية الجودة تلبي احتياجات السوق المحلية
+                والدولية. تتميز الشركة بقدرتها الإنتاجية التي تصل إلى 41,000 طن
+                من الآجر الأحمر سنويًا، مما يجعلها واحدة من أبرز الشركات في مجال
+                البناء في المنطقة. بفضل الخبرة الطويلة والتكنولوجيا الحديثة
+                المستخدمة في عمليات التصنيع، تضمن إنتاج مواد البناء توفير منتجات
+                متينة ومستدامة تساهم في تطوير مشاريع البناء والتشييد المتنوعة.
+              </p>
+            </div>
+          </div>
+          <div className="w-2/5 h-96 bg-slate-200 rounded-lg">
+            <img
+              src={hotelSouf}
+              className=" h-2/4 w-full rounded-t-lg"
+              alt=""
+            />
+            <div className="ps-4">
+              <h3 className="text-xl font-semibold">
+                شركة أم علي للأجر SARL SOAB
+              </h3>
+              <p className="font-semibold text-gray-600">
+                تأسست عام 2001 في ولاية تبسة، متخصصة في إنتاج الآجر الأحمر بجودة
+                فائقة. يعمل بالشركة حوالي 350 موظفاً يسهمون في تلبية احتياجات
+                قطاع البناء بمنتجات قوية وموثوقة. تصل الطاقة الإنتاجية السنوية
+                للشركة إلى نحو 28,000 طن من الآجر الأحمر، مما يجعلها لاعباً
+                مهماً في دعم مشاريع البناء على المستويين المحلي والإقليمي. تلتزم
+                **أم علي للأجر** بتقديم مواد بناء عالية الجودة، موجهة لتعزيز
+                البنية التحتية وتلبية متطلبات العملاء باحترافية ودقة.
+              </p>
+            </div>
+          </div>
+          <div className="w-2/5 h-96 bg-slate-200 rounded-lg">
+            <img
+              src={hotelSouf}
+              className=" h-2/4 w-full rounded-t-lg"
+              alt=""
+            />
+            <div className="ps-4">
+              <h3 className="text-xl font-semibold">شركة البلاسيتك للتغليف</h3>
+              <p className="font-semibold text-gray-600">
+                شركة **تجيني للبلاستيك**، التي تأسست في عام 2024 في ولاية تقرت،
+                متخصصة في صناعة المواد البلاستيكية. توظف الشركة حوالي 200 عامل،
+                وتلعب دورًا رئيسيًا في تزويد مصنع الآجر باحتياجاته من مواد
+                التغليف البلاستيكية. بفضل الخبرة والتكنولوجيا الحديثة، تلتزم
+                **تجيني للبلاستيك** بتقديم حلول تغليف عالية الجودة تلبي متطلبات
+                المصنع، مما يضمن حماية المنتجات وتوفيرها بأفضل شكل للأسواق.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
       <section className="my-10">
         <h1 className="text-4xl  w-24 mx-auto font-semibold pb-1 border-b-4 border-cyan-600">
           :أنواعه
